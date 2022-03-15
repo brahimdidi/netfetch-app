@@ -1,6 +1,22 @@
-.card {
-    width: 100px;
-    height: 200px;
+main {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    width: 300px;
+    height: 340px;
     border: 1px solid black;
     border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+}
+.movie-img {
+    border: 1px solid black;
+    padding: 6px;
+    width: 90%;
+    height: 60%;
+}
+.title-rating {
+    margin: unset;
 }
