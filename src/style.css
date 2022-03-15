@@ -1,29 +1,32 @@
 * {
-    color: white;
+  color: white;
 }
 
 main {
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie-card {
-    width: 300px;
-    height: 440px;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    align-items: center;
+  width: 300px;
+  height: 440px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
 }
+
 .movie-img {
-    padding: 6px;
-    width: 90%;
-    height: 60%;
-    border-radius: 4px;
+  padding: 6px;
+  width: 90%;
+  height: 60%;
+  border-radius: 4px;
 }
+
 .title-rating {
-    margin: unset;
+  margin: unset;
 }
+
 i {
-    cursor: pointer;
+  cursor: pointer;
 }
