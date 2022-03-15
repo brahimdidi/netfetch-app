@@ -7,4 +7,19 @@ const getComment = async () => {
     const data = await res.json();
     console.log(data);
 }
-getComment();
+
+const setComment = async (comment, username, creation_date) => {
+    await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify({
+        comment,
+        username,
+        creation_date
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+  };
+  
+  export { getComment, setComment};
