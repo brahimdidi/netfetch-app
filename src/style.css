@@ -30,6 +30,10 @@ main {
 
 i {
   cursor: pointer;
+  color: red;
+}
+i:hover {
+    opacity: 0.6;
 }
 
 
