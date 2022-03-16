@@ -1,6 +1,7 @@
 import getApi from './api.js';
 
 const main = document.querySelector('#main');
+const commentsImage = document.querySelector('#comments-img')
 
 const createCard = (name, imageSrc) => {
   const cardContainer = document.createElement('div');
@@ -13,9 +14,11 @@ const createCard = (name, imageSrc) => {
         <i class="fa-solid fa-heart"></i>
         </div>
     </div>
-    <button type="button" class="btn btn-outline-light">Comments</button>
+    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Comments</button>
     <button type="button" class="btn btn-outline-primary">Reservations</button>`;
   main.appendChild(cardContainer);
+  commentsImage.src =`${imageSrc}`
+
 };
 
 const movieList = async () => {
