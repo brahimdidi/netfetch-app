@@ -1,0 +1,8 @@
+.image {
+    width: 100%;
+}
+
+.output {
+    overflow: auto;
+    height: 300px;
+}
