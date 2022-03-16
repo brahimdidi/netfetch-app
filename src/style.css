@@ -1,3 +1,4 @@
+
 * {
   color: white;
 }
@@ -30,3 +31,11 @@ main {
 i {
   cursor: pointer;
 }
+
+
+
+.output {
+    overflow: auto;
+    height: 300px;
+}
+
