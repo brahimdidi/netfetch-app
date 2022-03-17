@@ -1,20 +1,20 @@
 import { setComment, getComment } from './comments.js';
 // console.log(getComment)
-const inputName = document.querySelector('.input-name');
-const inputInsight = document.querySelector('.input-insight');
+
 const commentBtn = document.querySelector('.comment-btn');
 const list = document.querySelector('.list-group');
 const listGroupItem = document.querySelector('.list-group-item');
 
-const data = () => {
-  let result = getComment();
-  result.then((res) => {
+const data = (id) => {
+  console.log(id);
+   getComment(id).then((res) => {
     printComment(list, res);
   });
 };
-
+export default data;
 
 const printComment = (list, res) => {
+  list.innerHTML = '';
   res.forEach((el) => {
     let item = document.createElement('li');
     item.classList.add('list-group-item')
@@ -26,11 +26,8 @@ const printComment = (list, res) => {
 };
 
 
-commentBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  setComment(inputName.value, inputInsight.value);
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-    data();
-  });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     data();
+//   });

@@ -5,32 +5,33 @@ const list = document.querySelector('.list-group');
 const listGroupItem = document.querySelector('.list-group-item');
 
 
-const id = '3aKejX1g8bEFa43nKNFo';
+const idMian = '3aKejX1g8bEFa43nKNFo';
 
-const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${id}/comments?item_id=item1`;
+const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${idMian}/comments`;
 
-const getComment = async () => {
-    const res = await fetch(url);
+const getComment = async ( id) => {
+  const getUrl = `${url}?item_id=${id}`;
+    const res = await fetch(getUrl);
     const data = await res.json();
-    // console.log(data);
     return data;
 }
-getComment()
 
-const setComment = async (comment, username, creation_date) => {
-    await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify({
-        comment,
-        username,
-        creation_date
-      }),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    });
-  };
-  
+
+const setComment = async (id, username, comment) => {
+  const body = {};
+
+  body['item_id'] = id;
+  body['username'] = username;
+  body['comment'] = comment;
+  await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(body),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+};
+
+
   export { getComment, setComment};
 
- 
