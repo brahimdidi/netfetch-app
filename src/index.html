@@ -53,14 +53,14 @@
 
 
     <!-- Button trigger modal -->
-    <button
+    <!-- <button
       type="button"
       class="btn btn-primary"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
     >
       Click me
-    </button>
+    </button> -->
 
     <section class="modal-section">
 
@@ -159,9 +159,9 @@
                 <div class="col-sm-4">
                   <h5 class="card-title">Add a Reservation</h5>
                   <form class="mb-3">
-                    <input type="text" class="form-control mb-3" id="your-name" placeholder="Your name" />
-                    <input type="date" class="form-control mb-3" id="your-name" placeholder="Start Date" />
-                    <input type="date" class="form-control mb-3" id="your-name" placeholder="End Date" />
+                    <input type="text" class="form-control mb-3" id="your-reservation-name" placeholder="Your name" />
+                    <input type="date" class="form-control mb-3" id="start-date" placeholder="Start Date" />
+                    <input type="date" class="form-control mb-3" id="end-date" placeholder="End Date" />
 
                     <button type="button" class="btn btn-secondary mb-3 reservation-btn">
                       Reserve
@@ -174,9 +174,7 @@
                       <h5 class="card-title">Reservations</h5>
                       <p class="counter">0</p>
                     </div>
-                    <ul class="list-group list-group-flush output">
-                      <li class="list-group-item">An item</li>
-                    </ul>
+                    <ul class="list-group list-group-flush output-reservation"></ul>
                   </div>
                 </div>
               </div>
