@@ -40,3 +40,15 @@ i {
   overflow: auto;
   height: 300px;
 }
+
+.reservation-img {
+  width: 200px;
+  height: auto;
+  align-self: center;
+}
+
+.reservation-input {
+  justify-content: center;
+}
+
+

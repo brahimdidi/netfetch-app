@@ -19,8 +19,8 @@ const getMovieItem = (showName, arr) => {
     ".reservation-img"
   ).src = `${element.image.medium}`);
 
-  const resevationMummary = document.querySelector(".reservation-summary");
-  resevationMummary.innerHTML = `${element.summary}`;
+  const resevationSummary = document.querySelector(".reservation-summary");
+  resevationSummary.innerHTML = `${element.summary}`;
 };
 
 export default getMovieItem;
