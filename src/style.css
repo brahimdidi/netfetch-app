@@ -139,3 +139,16 @@ i:hover {
   color: white;
   font-size: 2.5rem;
 }
+
+.btn-reserve {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.btn-reserve:hover {
+  background: #0DCAF0;
+
+}
