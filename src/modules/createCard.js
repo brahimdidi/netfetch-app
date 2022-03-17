@@ -15,7 +15,7 @@ const createCard = (name, imageSrc, id) => {
     </div>
     <button id="${id}" type="button" class="btn btn-outline-light triger-modal"   data-bs-toggle="modal"
     data-bs-target="#exampleModal" identifier="${name}">Comments</button>
-    <button type="button" class="btn btn-outline-primary triger-modal" data-bs-toggle="modal"
+    <button type="button" class="btn btn-outline-primary triger-modal-reserv" data-bs-toggle="modal"
     data-bs-target="#reservation" identifier="${name}">Reservations</button>`;
 
   main.appendChild(cardContainer);
@@ -39,6 +39,17 @@ const movieList = async () => {
        const commentBtn = document.querySelector('.comment-btn');
        console.log(e.target.id);
        commentBtn.id = e.target.id;
+    });
+  });
+
+  const trigerModalReserv = document.querySelectorAll('.triger-modal-reserv');
+  trigerModalReserv.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const tagetMovi = e.target.getAttribute('identifier');
+      getMovieItem(tagetMovi, moviesData, e.target.id);
+      const reservationBtn = document.querySelector('.reservation-btn');
+      console.log(e.target.id);
+      reservationBtn.id = e.target.id;
     });
   });
 };
