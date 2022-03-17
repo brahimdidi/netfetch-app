@@ -103,7 +103,8 @@
     </div>
   </div>
 
-  <!-- Reservation popup Modal -->
+  <!-- Reservation popup Modal bootstrap -->
+  
   <div class="modal fade" id="reservation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bg-secondary">
@@ -152,47 +153,50 @@
     </div>
   </div>
 
-  <div class="reserve-div">
-    <div class="reserve-content">
-      <img class="movie-image" src="./garden-g3d47ba2a6_1920.jpg" alt="movie-image">
-      <h2 class="movie-title">Movie name</h2>
-      <ul class="movie-details">
-        <li>
-          <p class="detail1"> Genre: action</p>
-        </li>
-        <li>
-          <p class="detail1"> Genre: action</p>
-        </li>
-        <li>
-          <p class="detail1"> Genre: action</p>
-        </li>
-        <li>
-          <p class="detail1"> Genre: action</p>
-        </li>
-      </ul>
-      <div class="reserve-input">
-        <h5>Reservation</h5>
-        <form action="submit" class="form-reserve">
-          <input type="text" placeholder="Your Name"><br>
-          <input type="date" name="date"><br>
-          <input type="time" name="time"><br>
-          <button disabled="disabled">
-            <span>Reserve</span>
-          </button>
-        </form>
-        <div class="reservation-heading">
-          <h5>Reservation (1)</h5>
-          <div class="reservation">
-            <span>18/03/2022</span>
-            <span>12:00 AM</span>
-            <span>by Vignesh</span>
+  <!-- reservation popup plain css -->
+
+  <div class="reserve-popup">
+    <div class="reserve-div">
+      <div class="reserve-content">
+        <img class="movie-image" src="./garden-g3d47ba2a6_1920.jpg" alt="movie-image">
+        <h2 class="movie-title">Movie name</h2>
+        <ul class="movie-details">
+          <li>
+            <p class="detail1"> Genre: action</p>
+          </li>
+          <li>
+            <p class="detail1"> Genre: action</p>
+          </li>
+          <li>
+            <p class="detail1"> Genre: action</p>
+          </li>
+          <li>
+            <p class="detail1"> Genre: action</p>
+          </li>
+        </ul>
+        <div class="reserve-input">
+          <h5>Reservation</h5>
+          <form action="submit" class="form-reserve">
+            <input type="text" placeholder="Your Name"><br>
+            <input type="date" name="date"><br>
+            <input type="time" name="time"><br>
+            <button disabled="disabled">
+              <span>Reserve</span>
+            </button>
+          </form>
+          <div class="reservation-heading">
+            <h5>Reservation (1)</h5>
+            <div class="reservation">
+              <span>18/03/2022</span>
+              <span>12:00 AM</span>
+              <span>by Vignesh</span>
+            </div>
           </div>
         </div>
       </div>
+      <button type="button" class="close-button"><i class="fa-solid fa-xmark"></i></button>
     </div>
-    <button type="button" class="close-button"><i class="fa-solid fa-xmark"></i></button>
   </div>
-
 
 
   <!-- footer start -->
