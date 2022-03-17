@@ -16,7 +16,7 @@ const createCard = (name, imageSrc) => {
     <button type="button" class="btn btn-outline-light triger-modal"   data-bs-toggle="modal"
     data-bs-target="#exampleModal" identifier="${name}">Comments</button>
     <button type="button" class="btn btn-outline-primary triger-modal" data-bs-toggle="modal"
-    data-bs-target="#reservation" identifier="${name}">Reservations</button>`;
+    data-bs-target="#reservation" identifier="${name}" id ="popup-reserve" >Reservations</button>`;
 
   main.appendChild(cardContainer);
 };

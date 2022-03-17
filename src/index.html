@@ -132,8 +132,8 @@
     </div>
 
     <!-- Reservation popup Modal bootstrap -->
-  
-  <div class="modal fade" id="reservation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div id="reservation"></div>
+  <!-- <div class="modal fade" id="reservation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bg-secondary">
         <div class="modal-header">
@@ -150,10 +150,10 @@
                   <h5 class="card-title">Add a Reservation</h5>
                   <form class="mb-3">
                     <input type="text" class="form-control mb-3" id="your-name" placeholder="Your name" />
-                    <input type="date" class="form-control mb-3" id="your-name" placeholder="Start Date" />
-                    <input type="time" class="form-control mb-3" id="your-name" placeholder="Time" />
+                    <input type="date" class="form-control mb-3" id="your-date" min="2022-03-17" max="2100-12-31" />
+                    <input type="time" class="form-control mb-3" id="your-time" value="18:00:00" min="18:00:00" max="22:30:00"  />
 
-                    <button type="button" class="btn btn-secondary mb-3">
+                    <button type="button" class="btn btn-secondary mb-3" id="reserve">
                       Reserve
                     </button>
                   </form>
@@ -180,7 +180,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
