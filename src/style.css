@@ -1,4 +1,3 @@
-
 * {
   color: white;
 }
@@ -32,10 +31,12 @@ i {
   cursor: pointer;
 }
 
-
-
-.output {
-    overflow: auto;
-    height: 300px;
+.show-image {
+  width: 100%;
+  height: auto;
 }
 
+.output {
+  overflow: auto;
+  height: 300px;
+}
