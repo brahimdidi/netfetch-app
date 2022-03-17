@@ -1,4 +1,4 @@
-* {
+h4 {
   color: white;
 }
 
@@ -39,4 +39,8 @@ i {
 .output {
   overflow: auto;
   height: 300px;
+}
+
+.summary {
+  color: #fff;
 }
