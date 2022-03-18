@@ -1,18 +1,32 @@
 
+ export const getLikesApi = async () => {
+    const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/SCyxl5cnkMvgsvMmSHIH/likes',
+    {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    return response.json();
+  };
+ export const getData = async () => {
+      const response = await fetch('https://api.tvmaze.com/shows');
+      const data = await response.json();
+      return data;
+    };
+  
+  
+ export const postLikes = async (item) => {
+      const response = await fetch(
+        'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/SCyxl5cnkMvgsvMmSHIH/likes',
+        {
+          method: 'POST',
+          body: JSON.stringify({ item_id: item }),
+          headers: {
+            'Content-type': 'application/json; Charset=UTF-8',
+          },
+        },
+      );
+    
+  };
 
-// const likeBtn = document.getElementById(`${id}`);
-const likeNumber = document.getElementById('like-number');
-
-const likeCounter = () => {
-    const counter = 0;
-    likeNumber.innerHTML = counter;
-}
-
-const likeId = () => {
-    // get the element id 
-}
-
-
-document.querySelectorAll('.fa-solid').addEventListener('click',() => {
-    console.log('like');
-})
+  export default  getData;
