@@ -1,18 +1,19 @@
 import './style.css';
 import './modules/createCard.js';
+import './modules/style.js';
 import './modules/api.js';
-import './modules/likeCounter'
-import getData, { postLikes, getLikesApi } from './modules/likeCounter';
+import './modules/renderComment.js';
+import './modules/printComment.js';
+import getData, { postLikes, getLikesApi } from './modules/api';
 import createCard from './modules/createCard.js'
+import getMovieItem from "./modules/renderComment.js";
+import getMovieItemReservation from './modules/renderReservation.js'
 
 
-
-
-
+const main = document.querySelector('#main');
 
 
   const loading = () => {
-    const main = document.querySelector('#main');
     const loadDiv = document.createElement('div');
     const mask = document.createElement('div');
     loadDiv.classList.add('loading');
@@ -27,8 +28,16 @@ import createCard from './modules/createCard.js'
 
   // renderItems function start
   
+if(main.innerHTML == ""){
+    loading();
+} else {
+    removeLoding();
+}
+
+
+
   const renderItems = async () => {
-    const main = document.querySelector('#main');
+   
     const likesData = await getLikesApi();
     main.innerHTML = '';
     const moviesData = await getData();
@@ -40,6 +49,7 @@ import createCard from './modules/createCard.js'
     } else {
     count = 0;
     }
+    
     main.innerHTML += createCard(item, count);
     });
     
@@ -50,14 +60,38 @@ import createCard from './modules/createCard.js'
       item.addEventListener('click', () => {
       const movieId = item.getAttribute('data-id');
     
-      if (item.style.color !== 'pink') {
-      item.style.color = 'pink';
+      if (item.style.color !== 'grey') {
+      item.style.color = 'grey';
       item.firstElementChild.innerHTML =
       Number(item.firstElementChild.innerHTML) + 1;
       postLikes(movieId);
+      
     }
+
     });
     });
+    // target the comment button
+    const trigerModal = document.querySelectorAll(".triger-modal");
+    trigerModal.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+           const tagetMovi = e.target.getAttribute("identifier");
+           getMovieItem(tagetMovi, moviesData, e.target.id);
+           const commentBtn = document.querySelector(".comment-btn");
+           commentBtn.id = e.target.id;
+        });
+      });
+
+      // target the reservation button
+      const trigerModalReserv = document.querySelectorAll(".triger-modal-reserv");
+        trigerModalReserv.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+         const reservTarget = e.target.getAttribute("identifier");
+       getMovieItemReservation(reservTarget, moviesData, e.target.id);
+       const reservationBtn = document.querySelector(".reservation-btn");
+       reservationBtn.id = e.target.id;
+    });
+  });
+
     };
     
     renderItems();
