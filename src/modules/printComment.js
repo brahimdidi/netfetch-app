@@ -5,9 +5,17 @@ const commentBtn = document.querySelector('.comment-btn');
 const list = document.querySelector('.list-group');
 const listGroupItem = document.querySelector('.list-group-item');
 
+export const counterComments = (data) => {
+  let counter = 0;
+  data.forEach((el) => (counter += 1));
+  return counter;
+};
+
+
 const data = (id) => {
-  console.log(id);
-   getComment(id).then((res) => {
+  getComment(id).then((res) => {
+    commentsCounter.innerHTML = `${counterComments(res)}`;
+
     printComment(list, res);
   });
 };
