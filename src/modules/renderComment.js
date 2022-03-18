@@ -8,7 +8,7 @@ const getMovieItem = (showName, arr, id) => {
   const card = document.querySelector('.card');
   const cardImage = (document.querySelector(
     '.card-img-top'
-  ).src = `${element.image.medium}`);
+  ).src = `${element.image.original}`);
 
   const summary = document.querySelector('.summary');
   summary.innerHTML = `${element.summary}`;
@@ -19,7 +19,7 @@ const getMovieItem = (showName, arr, id) => {
   const resevationCard = document.querySelector('reservation-card');
   const resevationCardImage = (document.querySelector(
     '.reservation-img'
-  ).src = `${element.image.medium}`);
+  ).src = `${element.image.original}`);
 
   const resevationMummary = document.querySelector('.reservation-summary');
   resevationMummary.innerHTML = `${element.summary}`;
