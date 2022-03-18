@@ -1,18 +1,23 @@
 
-main {
+#main {
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 100px !important;
 }
+
 
 .movie-card {
   width: 300px;
-  height: 440px;
   border: 1px solid black;
   border-radius: 20px;
   padding: 10px;
   align-items: center;
+  max-height: 460px;
 }
 
+.triger-modal {
+    margin-top: 10px ;
+}
 .movie-img {
   padding: 6px;
   width: 90%;
@@ -22,6 +27,8 @@ main {
 
 .title-rating {
   margin: unset;
+  max-height: 70px;
+  padding-bottom: 10px;
 }
 
 .like-div {
@@ -36,9 +43,6 @@ i {
 i:hover {
     opacity: 0.6;
 }
-
-
-
 .output {
     overflow: auto;
     height: 300px;
@@ -83,4 +87,53 @@ i:hover {
     position: absolute;
     z-index: 99999999;
   }
+  h4 {
+    color: white;
+  }
   
+  .show-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .output , .output-reservation{
+    overflow: auto;
+    height: 300px;
+  }
+  
+  .summary, .reservation-summary{
+    color: #fff;
+  }
+/* footer styling */
+#footer {
+    max-height: 80px;
+}
+
+.fa-github {
+    color: unset;
+}
+
+
+
+
+
+  @media screen and (max-width:700px) {
+      .movie-card {
+          max-height: 440px;
+      }
+
+      #footer {
+            width: 100%;
+            position:   unset !important;
+            background: none !important;
+      }
+      #footer div {
+          flex-direction: column-reverse;
+      }
+      .triger-modal {
+          margin-top: unset;
+      }
+      #main {
+          margin-bottom: unset;
+      }
+  }
