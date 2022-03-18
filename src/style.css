@@ -36,11 +36,11 @@ i {
   height: auto;
 }
 
-.output {
+.output , .output-reservation{
   overflow: auto;
   height: 300px;
 }
 
-.summary {
+.summary, .reservation-summary {
   color: #fff;
 }
