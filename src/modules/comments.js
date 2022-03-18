@@ -1,8 +1,3 @@
-const inputName = document.querySelector('.input-name');
-const inputInsight = document.querySelector('.input-insight');
-const commentBtn = document.querySelector('.comment-btn');
-const list = document.querySelector('.list-group');
-const listGroupItem = document.querySelector('.list-group-item');
 
 
 const idMian = '3aKejX1g8bEFa43nKNFo';

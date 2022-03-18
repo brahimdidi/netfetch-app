@@ -3,7 +3,7 @@ import { setComment, getComment } from './comments.js';
 const commentBtn = document.querySelector('.comment-btn');
 const list = document.querySelector('.list-group');
 const listGroupItem = document.querySelector('.list-group-item');
-
+const commentsCounter = document.querySelector('.counter');
 export const counterComments = (data) => {
   let counter = 0;
   data.forEach((el) => (counter += 1));
