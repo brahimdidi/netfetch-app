@@ -1,5 +1,4 @@
 import { setComment, getComment } from './comments.js';
-// console.log(getComment)
 
 const commentBtn = document.querySelector('.comment-btn');
 const list = document.querySelector('.list-group');
@@ -15,7 +14,6 @@ export const counterComments = (data) => {
 const data = (id) => {
   getComment(id).then((res) => {
     commentsCounter.innerHTML = `${counterComments(res)}`;
-
     printComment(list, res);
   });
 };
@@ -27,7 +25,7 @@ const printComment = (list, res) => {
     let item = document.createElement('li');
     item.classList.add('list-group-item')
       // console.log(el)
-    item.innerHTML = `${el.creation_date} ${el.username} ${el.comment}`;
+    item.innerHTML = `${el.creation_date}  ${el.username} : ${el.comment}`;
     list.appendChild(item);
   });
 
