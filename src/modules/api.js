@@ -1,29 +1,32 @@
 
-const api2 = 'https://api.tvmaze.com/shows';
-// styling
+ export const getLikesApi = async () => {
+    const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/SCyxl5cnkMvgsvMmSHIH/likes',
+    {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    return response.json();
+  };
+ export const getData = async () => {
+      const response = await fetch('https://api.tvmaze.com/shows');
+      const data = await response.json();
+      return data;
+    };
+  
+  
+ export const postLikes = async (item) => {
+      const response = await fetch(
+        'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/SCyxl5cnkMvgsvMmSHIH/likes',
+        {
+          method: 'POST',
+          body: JSON.stringify({ item_id: item }),
+          headers: {
+            'Content-type': 'application/json; Charset=UTF-8',
+          },
+        },
+      );
+    
+  };
 
-const navDiv = document.getElementById('nav-div');
-const mediaStyle = (x) => {
-  if (x.matches) { // If media query matches
-    navDiv.classList.remove('w-50');
-  }
-};
-
-const x = window.matchMedia('(max-width: 700px)');
-mediaStyle(x); // Call listener function at run time
-
-// fetching data
-
-const getApi = async () => {
-  const response = await fetch(api2);
-  const data = await response.json();
-  return data;
-};
-
-
-
-
-
-
-
-export default getApi;
+  export default  getData;
