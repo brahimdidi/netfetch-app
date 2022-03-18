@@ -2,8 +2,6 @@
  * @jest-environment jsdom
  */
 import {counterComments}  from '../modules/printComment';
-console.log(counterComments)
-
 
 describe('Test the comments function', () => {
   test('Number of item in the arr', () => {
@@ -25,7 +23,6 @@ describe('Test the comments function', () => {
     const arr = ['Soufiane', {}, [1, 'go'], 2022, 'JavaScript'];
     expect(counterComments(arr)).toBe(5);
   });
-
 });
 
    
