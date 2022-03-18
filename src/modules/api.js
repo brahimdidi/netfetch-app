@@ -1,4 +1,4 @@
-const api1 = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi';
+
 const api2 = 'https://api.tvmaze.com/shows';
 // styling
 
@@ -19,23 +19,6 @@ const getApi = async () => {
   const data = await response.json();
   return data;
 };
-
-const postLikes = async () => {
-  const nameInput = document.getElementById('name');
-  const scoreInput = document.getElementById('score');
-
-  await fetch(`${api1}`, {
-    method: 'Post',
-    headers: {
-      'Content-type': 'application/json',
-    },
-    body: JSON.stringify({ user: nameInput.value, score: scoreInput.value }),
-  });
-};
-
-
-
-
 
 
 
