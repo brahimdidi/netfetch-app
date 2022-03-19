@@ -156,3 +156,7 @@ h4 {
     margin-bottom: unset;
   }
 }
+
+.output-comments {
+  width: 18rem;
+}
