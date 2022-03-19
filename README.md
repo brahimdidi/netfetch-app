@@ -11,11 +11,13 @@
 
 ## Live Demo
 
-[Website Link]()
+[Website Link](https://brahimdidi.github.io/Capstone-js/)
 
 ## Mini Demo
 
-![screenshot](./src/images/presentation.gif)
+
+## Screenshot
+![screenshot](./src/jsCapstonPrjt.PNG)
 
 Additional description about the project and its features.
 
