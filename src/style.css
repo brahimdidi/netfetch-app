@@ -1,0 +1,157 @@
+
+#main {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px !important;
+}
+
+#movies-button {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.movie-card {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+  max-height: 460px;
+}
+
+.triger-modal {
+  margin-top: 10px;
+}
+
+.movie-img {
+  padding: 6px;
+  width: 90%;
+  height: 60%;
+  border-radius: 4px;
+}
+
+.title-rating {
+  margin: unset;
+  max-height: 70px;
+  padding-bottom: 10px;
+}
+
+.like-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+  color: red;
+}
+
+i:hover {
+  opacity: 0.6;
+}
+
+.output {
+  overflow: auto;
+  height: 300px;
+}
+
+.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
+}
+
+/* // loading styling  */
+.loading {
+  width: 160px;
+  height: 160px;
+  border-radius: 150px;
+  border: 15px solid red;
+  border-top-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+  animation: loading 1.2s linear infinite;
+  z-index: 999999999;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.summary,
+.reservation-summary,
+.counter,
+.counter-reservation {
+  color: #dc3545 !important;
+}
+
+.mask {
+  background: rgba(0, 0, 0, 0.918);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 99999999;
+}
+
+h4 {
+  color: white;
+}
+
+.show-image {
+  width: 100%;
+  height: auto;
+}
+
+.output,
+.output-reservation {
+  overflow: auto;
+  height: 300px;
+}
+
+.summary,
+.reservation-summary {
+  color: #fff;
+}
+
+/* footer styling */
+#footer {
+  max-height: 80px;
+}
+
+.fa-github {
+  color: unset;
+}
+
+@media screen and (max-width: 700px) {
+  .movie-card {
+    max-height: 440px;
+  }
+
+  #footer {
+    width: 100%;
+    position: unset !important;
+    background: none !important;
+  }
+
+  #footer div {
+    flex-direction: column-reverse;
+  }
+
+  .triger-modal {
+    margin-top: unset;
+  }
+
+  #main {
+    margin-bottom: unset;
+  }
+}
