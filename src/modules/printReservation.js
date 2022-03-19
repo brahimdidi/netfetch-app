@@ -1,26 +1,13 @@
-import { getReservation } from "./reservation.js";
-
-
-const list = document.querySelector(".output-reservation");
-const reservationCounter = document.querySelector('.counter-reservation'); 
+import { getReservation } from './reservation.js';
 
 export const counterReservation = (data) => {
-  let counterReserv = 0
+  let counterReserv = 0;
   data.forEach((el) => counterReserv += 1);
   return counterReserv;
 };
 
-
 const list = document.querySelector('.output-reservation');
 const reservationCounter = document.querySelector('.counter-reservation');
-
-const dataReservation = (id) => {
-  getReservation(id).then((res) => {
-    reservationCounter.innerHTML = `${counterReservation(res)}`;
-    printReservation(list, res);
-  });
-};
-export default dataReservation;
 
 const printReservation = (list, res) => {
   list.innerHTML = '';
@@ -31,3 +18,10 @@ const printReservation = (list, res) => {
     list.appendChild(item);
   });
 };
+const dataReservation = (id) => {
+  getReservation(id).then((res) => {
+    reservationCounter.innerHTML = `${counterReservation(res)}`;
+    printReservation(list, res);
+  });
+};
+export default dataReservation;

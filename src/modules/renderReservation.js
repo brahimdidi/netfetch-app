@@ -2,15 +2,14 @@ import dataReservation from './printReservation';
 import { setReservation } from './reservation.js';
 
 const getMovieItemReservation = (showName, arr, id) => {
-  const element = arr.find((el) => el.name == showName);
+  const element = arr.find((el) => el.name === showName);
 
   // Reservation popup Modal
   const resevationModalTitle = document.querySelector('.reservation-title');
   resevationModalTitle.textContent = `${element.name}`;
-  const resevationCard = document.querySelector('reservation-card');
-  const resevationCardImage = (document.querySelector(
-    '.reservation-img',
-  ).src = `${element.image.original}`);
+  // const resevationCard = document.querySelector('reservation-card');
+  const resevationCardImage = document.querySelector('.reservation-img');
+  resevationCardImage.src = `${element.image.original}`;
 
   const resevationMummary = document.querySelector('.reservation-summary');
   resevationMummary.innerHTML = `${element.summary}`;

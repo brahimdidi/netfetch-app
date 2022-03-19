@@ -7,14 +7,14 @@ export const getLikesApi = async () => {
     });
   return response.json();
 };
-export const getData = async () => {
+const getData = async () => {
   const response = await fetch('https://api.tvmaze.com/shows');
   const data = await response.json();
   return data;
 };
 
 export const postLikes = async (item) => {
-  const response = await fetch(
+  await fetch(
     'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/SCyxl5cnkMvgsvMmSHIH/likes',
     {
       method: 'POST',

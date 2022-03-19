@@ -9,7 +9,6 @@ import getMovieItemReservation from './modules/renderReservation.js';
 const main = document.querySelector('#main');
 const movieBtnHeader = document.getElementById('movies-button');
 
-
 const loading = () => {
   const loadDiv = document.createElement('div');
   const mask = document.createElement('div');
@@ -45,7 +44,7 @@ const renderItems = async () => {
     }
 
     main.innerHTML += createCard(item, count);
-    movieBtnHeader.textContent = `Movies (${moviesData.length})`
+    movieBtnHeader.textContent = `Movies (${moviesData.length})`;
   });
 
   const like = document.querySelectorAll('.like-icon');

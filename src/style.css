@@ -88,7 +88,7 @@ i:hover {
   }
 }
 .summary, .reservation-summary, .counter, .counter-reservation{
-    color: #dc3545;
+    color: #dc3545 !important;
   }
 
 .mask {
