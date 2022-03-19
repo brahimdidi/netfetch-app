@@ -2,13 +2,18 @@
 
 // const commentBtn = document.querySelector('.comment-btn');
 const list = document.querySelector('.list-group');
-// const listGroupItem = document.querySelector('.list-group-item');
+const listGroupItem = document.querySelector('.list-group-item');
 const commentsCounter = document.querySelector('.counter');
+export const counterComments = (data) => {
+  let counter = 0;
+  data.forEach((el) => (counter += 1));
+  return counter;
+};
+
+
 const data = (id) => {
   getComment(id).then((res) => {
-    let counter = 0;
-    res.forEach((el) => counter += 1);
-    commentsCounter.innerHTML = `${counter}`;
+    commentsCounter.innerHTML = `${counterComments(res)}`;
     printComment(list, res);
   });
 };
