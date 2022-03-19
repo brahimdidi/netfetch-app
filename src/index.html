@@ -26,7 +26,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse ms-5" id="navbarNav align-items-center">
+              <div class="collapse navbar-collapse ms-5 align-items-center" id="navbarNav">
                 <ul class="navbar-nav ms-4">
                   <li class="nav-item">
                     <a id="movies-button" class="nav-link active" aria-current="page" href="#">Movies</a>
@@ -78,7 +78,7 @@
           </div>
           <div class="modal-body">
             <div class="card mb-3 bg-dark">
-              <img class="card-img-top" alt="..." />
+              <img src="#" class="card-img-top" alt="..." />
               <div class="card m-2">
                 <div class="card-body">
                   <p class="summary"></p>
@@ -110,7 +110,7 @@
                     </form>
                   </div>
                   <div class="col-sm-8">
-                    <div class="card output-comments" style="width: 18rem">
+                    <div class="card output-comments">
                       <div class="card-header d-flex justify-content-between">
                         <h5 class="card-title">Comments</h5>
                         <p class="counter">0</p>
@@ -141,13 +141,13 @@
       class="modal fade"
       id="reservation"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="exampleModalLabelR"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg">
         <div class="modal-content bg-secondary">
           <div class="modal-header">
-            <h5 class="modal-title reservation-title" id="exampleModalLabel">
+            <h5 class="modal-title reservation-title" id="exampleModalLabelR">
               Reservation
             </h5>
             <button
@@ -159,7 +159,7 @@
           </div>
           <div class="modal-body">
             <div class="card mb-3 bg-dark reservation-card">
-              <img class="card-img-top reservation-img" alt="..." />
+              <img src="#" class="card-img-top reservation-img" alt="..." />
 
               <div class="card m-2">
                 <div class="card-body">
@@ -175,19 +175,19 @@
                         type="text"
                         class="form-control mb-3"
                         id="your-reservation-name"
-                        placeholder="Your name"
+                       
                       />
                       <input
                         type="date"
                         class="form-control mb-3"
                         id="start-date"
-                        placeholder="Start Date"
+                        
                       />
                       <input
                         type="date"
                         class="form-control mb-3"
                         id="end-date"
-                        placeholder="End Date"
+                       
                       />
 
                       <button
@@ -201,7 +201,6 @@
                   <div class="col-sm-8">
                     <div
                       class="card output-comments bg-secondary"
-                      style="width: 18rem"
                     >
                       <div class="card-header d-flex justify-content-between">
                         <h5 class="card-title">Reservations</h5>
