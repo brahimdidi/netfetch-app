@@ -7,7 +7,7 @@
 
 ## Video Presentation
 
-[Presentation Link](https://drive.google.com/file/d/1czlW4Wi7PG3mrsb7nQ-i5qx28wukwU-C/view?usp=sharing)
+[Presentation Link](https://www.veed.io/view/53b458fa-23f6-4124-b026-92a8b3216e39)
 
 ## Live Demo
 
