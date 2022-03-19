@@ -1,5 +1,6 @@
 import { setComment } from './comments';
 import data from './printComment';
+
 const getMovieItem = (showName, arr, id) => {
   const element = arr.find((el) => el.name == showName);
 
@@ -7,7 +8,7 @@ const getMovieItem = (showName, arr, id) => {
   modalTitle.textContent = `${element.name}`;
   const card = document.querySelector('.card');
   const cardImage = (document.querySelector(
-    '.card-img-top'
+    '.card-img-top',
   ).src = `${element.image.original}`);
 
   const summary = document.querySelector('.summary');
@@ -18,7 +19,7 @@ const getMovieItem = (showName, arr, id) => {
   resevationModalTitle.textContent = `${element.name}`;
   const resevationCard = document.querySelector('reservation-card');
   const resevationCardImage = (document.querySelector(
-    '.reservation-img'
+    '.reservation-img',
   ).src = `${element.image.original}`);
 
   const resevationMummary = document.querySelector('.reservation-summary');
