@@ -16,7 +16,6 @@ const setReservation = async (id, yourName, startDate, endDate) => {
   body.username = yourName;
   body.date_start = startDate;
   body.date_end = endDate;
-  console.log(body);
   await fetch(url, {
     method: 'POST',
     body: JSON.stringify(body),

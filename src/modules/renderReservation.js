@@ -1,4 +1,4 @@
-import dataReservation from './printReservation';
+import dataReservation from './printReservation.js';
 import { setReservation } from './reservation.js';
 
 const getMovieItemReservation = (showName, arr, id) => {
