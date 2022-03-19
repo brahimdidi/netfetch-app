@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Javascript Capstone</title>
-</head>
-<body class="bg-black">
-    <header class=" bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-            <div id="nav-div" class="container-fluid w-50">
-              <a class=" display-3  bg-dark ms-5 text-danger rounded-2" id="logo" href="#index.html">Netfetch</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse ms-5" id="navbarNav">
-                <ul class="navbar-nav ms-4">
-                  <li class="nav-item">
-                    <a id="movies-button" class="nav-link active" aria-current="page" href="#">Movies</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Categories</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Years</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
+  </head>
+  <body class="bg-black">
+    <header class="bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <div id="nav-div" class="container-fluid w-50">
+          <a
+            class="display-3 bg-dark ms-5 text-danger rounded-2"
+            id="logo"
+            href="#index.html"
+            >Netfetch</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-5" id="navbarNav">
+            <ul class="navbar-nav ms-4">
+              <li class="nav-item">
+                <a
+                  id="movies-button"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Movies</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Years</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-     <!-- cards start -->
-     <main id="main" class="d-flex mt-3 p-3 gap-3 w-100 m-auto"></main>
-
-
+    <!-- cards start -->
+    <main id="main" class="d-flex mt-3 p-3 gap-3 w-100 m-auto"></main>
 
     <!-- Button trigger modal -->
     <!-- <button
@@ -48,9 +74,7 @@
       Click me
     </button> -->
 
-    <section class="modal-section">
-
-    </section>
+    <section class="modal-section"></section>
     <!-- Modal -->
     <div
       class="modal fade"
@@ -59,7 +83,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg ">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content bg-secondary">
           <div class="modal-header">
             <h5 class="modal-title text-light" id="exampleModalLabel"></h5>
@@ -72,11 +96,12 @@
           </div>
           <div class="modal-body">
             <div class="card mb-3 bg-dark">
-              <img
-                class="card-img-top"
-                alt="..."
-              />
-              <p class="summary"></p>
+              <img class="card-img-top" alt="..." />
+              <div class="card m-2">
+                <div class="card-body">
+                  <p class="summary"></p>
+                </div>
+              </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-sm-4">
@@ -94,7 +119,10 @@
                         rows="3"
                         placeholder="Your insights"
                       ></textarea>
-                      <button type="button" class="btn btn-primary mb-3 text-dark comment-btn">
+                      <button
+                        type="button"
+                        class="btn btn-danger mb-3 text-light comment-btn"
+                      >
                         Comment
                       </button>
                     </form>
@@ -105,9 +133,7 @@
                         <h5 class="card-title">Comments</h5>
                         <p class="counter">0</p>
                       </div>
-                      <ul class="list-group list-group-flush output">
-
-                      </ul>
+                      <ul class="list-group list-group-flush output"></ul>
                     </div>
                   </div>
                 </div>
@@ -129,94 +155,134 @@
 
     <!-- Reservation popup Modal bootstrap -->
 
-  <div class="modal fade" id="reservation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content bg-secondary">
-        <div class="modal-header">
-          <h5 class="modal-title reservation-title" id="exampleModalLabel">Reservation</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="card mb-3 bg-dark reservation-card">
-            <img class="card-img-top reservation-img" alt="..." />
-            <p class=" reservation-summary"></p>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-4">
-                  <h5 class="card-title">Add a Reservation</h5>
-                  <form class="mb-3">
-                    <input type="text" class="form-control mb-3" id="your-reservation-name" placeholder="Your name" />
-                    <input type="date" class="form-control mb-3" id="start-date" placeholder="Start Date" />
-                    <input type="date" class="form-control mb-3" id="end-date" placeholder="End Date" />
+    <div
+      class="modal fade"
+      id="reservation"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header">
+            <h5 class="modal-title reservation-title" id="exampleModalLabel">
+              Reservation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card mb-3 bg-dark reservation-card">
+              <img class="card-img-top reservation-img" alt="..." />
 
-                    <button type="button" class="btn btn-primary mb-3 reservation-btn">
-                      Reserve
-                    </button>
-                  </form>
+              <div class="card m-2">
+                <div class="card-body">
+                  <p class="reservation-summary"></p>
                 </div>
-                <div class="col-sm-8">
-                  <div class="card output-comments bg-secondary" style="width: 18rem">
-                    <div class="card-header d-flex justify-content-between">
-                      <h5 class="card-title">Reservations</h5>
-                      <p class="counter-reservation"></p>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h5 class="card-title text-light">Add a Reservation</h5>
+                    <form class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control mb-3"
+                        id="your-reservation-name"
+                        placeholder="Your name"
+                      />
+                      <input
+                        type="date"
+                        class="form-control mb-3"
+                        id="start-date"
+                        placeholder="Start Date"
+                      />
+                      <input
+                        type="date"
+                        class="form-control mb-3"
+                        id="end-date"
+                        placeholder="End Date"
+                      />
+
+                      <button
+                        type="button"
+                        class="btn btn-danger mb-3 reservation-btn"
+                      >
+                        Reserve
+                      </button>
+                    </form>
+                  </div>
+                  <div class="col-sm-8">
+                    <div
+                      class="card output-comments bg-secondary"
+                      style="width: 18rem"
+                    >
+                      <div class="card-header d-flex justify-content-between">
+                        <h5 class="card-title">Reservations</h5>
+                        <p class="counter-reservation"></p>
+                      </div>
+                      <ul
+                        class="list-group list-group-flush output-reservation"
+                      ></ul>
                     </div>
-                    <ul class="list-group list-group-flush output-reservation"></ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-            Close
-          </button>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-<!-- footer start -->
-<footer id="footer" class="bg-dark text-center text-white fixed-bottom">
-    <!-- Grid container -->
-    <div class="container p-2 d-flex justify-content-between align-items-center ">
-      <!-- Section: Social media -->
-      <h5 class="text-light ms-0">@2022 All rights resereved</h5>
-      <section class="mb-4 ">
+    <!-- footer start -->
+    <footer id="footer" class="bg-dark text-center text-white fixed-bottom">
+      <!-- Grid container -->
+      <div
+        class="container p-2 d-flex justify-content-between align-items-center"
+      >
+        <!-- Section: Social media -->
+        <h5 class="text-light ms-0">@2022 All rights resereved</h5>
+        <section class="mb-4">
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/ridwanediallo"
+            role="button"
+            >Ridwane<i class="fab fa-github p-2 bg-opacity-10"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/brahimdidi"
+            role="button"
+            >Brahim<i class="fab fa-github p-2 bg-opacity-10"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/vikipretium"
+            role="button"
+            >Vignesh<i class="fab fa-github p-2 bg-opacity-10"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
 
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          >Ridwane<i class="fab fa-github p-2 bg-opacity-10"></i
-        ></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          >Brahim<i class="fab fa-github p-2 bg-opacity-10"></i
-        ></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          >Vignesh<i class="fab fa-github p-2 bg-opacity-10"></i
-        ></a>
-        
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <!-- Copyright -->
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <!-- Copyright -->
+      <!-- Copyright -->
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -224,11 +290,15 @@
       crossorigin="anonymous"
     ></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
- 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
-
