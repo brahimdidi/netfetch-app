@@ -4,9 +4,10 @@
   justify-content: center;
   margin-bottom: 100px !important;
 }
+
 #movies-button {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .movie-card {
@@ -87,9 +88,13 @@ i:hover {
     transform: rotate(360deg);
   }
 }
-.summary, .reservation-summary, .counter, .counter-reservation{
-    color: #dc3545 !important;
-  }
+
+.summary,
+.reservation-summary,
+.counter,
+.counter-reservation {
+  color: #dc3545 !important;
+}
 
 .mask {
   background: rgba(0, 0, 0, 0.918);
