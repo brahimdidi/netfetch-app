@@ -65,9 +65,11 @@ $ open dist/index.html
 
 ## Author
 
-👤 **Ridwan**
+👤 **Ridwan Diallo**
 
-- GitHub: [@githubhandle](https://github.com/ridwanediallo)
+- GitHub: [@githubridwan](https://github.com/ridwanediallo)
+- Twitter: [@twitterridwan](https://twitter.com/RidwaneD)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ridwan-diallo-9a1634193)
 
 👤 **Brahim**
 
