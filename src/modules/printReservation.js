@@ -2,7 +2,9 @@ import { getReservation } from './reservation.js';
 
 export const counterReservation = (data) => {
   let counterReserv = 0;
-  data.forEach((el) => counterReserv += 1);
+  /* eslint-disable */
+  data.forEach(() => counterReserv += 1);
+  /* eslint-enable */
   return counterReserv;
 };
 

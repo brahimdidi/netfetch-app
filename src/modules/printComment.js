@@ -4,7 +4,9 @@ const list = document.querySelector('.list-group');
 const commentsCounter = document.querySelector('.counter');
 export const counterComments = (data) => {
   let counter = 0;
-  data.forEach((el) => (counter += 1));
+  /* eslint-disable */
+  data.forEach(() => (counter += 1));
+  /* eslint-enable */
   return counter;
 };
 const printComment = (list, res) => {
