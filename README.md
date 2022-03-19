@@ -74,6 +74,8 @@ $ open dist/index.html
 👤 **Brahim**
 
 - GitHub: [@githubhandle](https://github.com/brahimdidi)
+- Twitter: [@twitterridwan](https://twitter.com/Brahimdidi6)
+- LinkedIn: [vikipretium](https://www.linkedin.com/in/sir-didi-b19617205/)
 
 👤 **Vignesh**
 
