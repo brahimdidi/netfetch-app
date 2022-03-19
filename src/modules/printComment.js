@@ -4,7 +4,9 @@ const list = document.querySelector('.list-group');
 const commentsCounter = document.querySelector('.counter');
 export const counterComments = (data) => {
   let counter = 0;
-  data.forEach((el) => (counter += 1));
+  data.forEach(function() {
+    counter += 1;
+  })
   return counter;
 };
 const printComment = (list, res) => {
