@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Website Link](https://brahimdidi.github.io/Capstone-js/)
+[Website Link](https://brahimdidi.github.io/netfetch-app/)
 
 ## Mini Demo
 
